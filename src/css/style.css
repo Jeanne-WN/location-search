@@ -1,0 +1,70 @@
+body {
+  font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑", "Helvetica Neue", Arial, sans-serif;
+  font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6, h7, p {
+    font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑", "Helvetica Neue", Arial, sans-serif;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+#container {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+#locationInput {
+  border-radius: 2px;
+}
+
+#searchButton {
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+#searchForm {
+    background: #fafafa;
+    border-radius: 5px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#searchResults ul {
+    background: aliceblue;
+}
+
+#searchResults .title {
+    margin: 10px 0;
+    display: inline-block;
+}
+
+#likedPlaces li {
+    margin: 10px 0;
+    background-color: #f2f2f2;
+    padding: 8px 12px;
+    border-radius: 2px;
+}
+
+#searchResults h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #008cba;
+  padding: 4px 0;
+}
+
+#searchResults a.like {
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+#searchResults .panel {
+  border-radius: 2px;
+  border: none;
+}

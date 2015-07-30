@@ -1,0 +1,20 @@
+{
+  "name": "testable-js",
+  "version": "0.0.0",
+  "description": "testable javascript",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.2",
+    "jshint-stylish": "^2.0.1",
+    "karma": "^0.13.3",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
+    "jasmine-core": "^2.3.4"
+  },
+  "dependencies": {},
+  "scripts": {
+    "karma": "karma",
+    "gulp": "gulp"
+  }
+}
