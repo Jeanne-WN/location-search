@@ -32,6 +32,10 @@ If you have already got `node` & `npm` installed locally, goto step 2.
 
 		gulp js
 
+7. To run both JSHint and tests, execute the following command in terminal
+
+		gulp
+
 #### Working with location backend service
 
 1. Get all locations
