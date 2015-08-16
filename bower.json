@@ -15,6 +15,7 @@
     "underscore": "~1.8.3"
   },
   "devDependencies": {
-    "jasmine-jquery": "~2.1.0"
+    "jasmine-jquery": "~2.1.0",
+    "jasmine-ajax": "~3.2.0"
   }
 }
