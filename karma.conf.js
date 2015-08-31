@@ -18,6 +18,7 @@ module.exports = function(config) {
       { pattern: 'spec/fixtures/**/*.html', included: false, served: true },
       'vendor/jquery/dist/jquery.js',
       'vendor/underscore/underscore.js',
+      'vendor/backbone/backbone.js',
       'vendor/jasmine-jquery/lib/jasmine-jquery.js',
       'vendor/jasmine-ajax/lib/mock-ajax.js',
       'src/js/**/*.js',
