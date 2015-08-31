@@ -1,0 +1,19 @@
+<script type="text/template" id='search-result-template'>
+  <ul>
+    <% _.each(locations, function(location) { %>
+      <li>
+        <div class="panel large-12 columns">
+          <h5><%= location.name %></h5>
+          <h6><%= location.description %></h6>
+          <a href="#" class="like button tiny right"><% if(location.liked) { %>unlike<% }else{ %>like<% } %></a>
+        </div>
+      </li>
+    <% }); %>
+  </ul>
+</script>
+
+<div id="searchResults" class="large-8 medium-8 columns">
+    <h4>Search results</h4>
+    <div id="results">
+    </div>
+</div>

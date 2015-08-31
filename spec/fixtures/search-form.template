@@ -1,0 +1,11 @@
+<script type="text/template" id='search-form-template'>
+  <div  class="large-9 medium-9 columns">
+    <input type="text" id="locationInput" value="" placeholder="Type a location name to search"/>
+  </div>
+  <div  class="large-3 medium-3 columns">
+    <input type="button" class="submit button tiny" id="searchButton" value="search" />
+  </div>
+</script>
+<div id="searchForm">
+
+</div>

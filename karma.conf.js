@@ -15,7 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      { pattern: 'spec/fixtures/**/*.html', included: false, served: true },
+      { pattern: 'spec/fixtures/**/*.template', included: false, served: true },
       'vendor/jquery/dist/jquery.js',
       'vendor/underscore/underscore.js',
       'vendor/backbone/backbone.js',

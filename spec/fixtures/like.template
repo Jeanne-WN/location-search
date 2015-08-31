@@ -1,0 +1,10 @@
+<script type="text/template" id='liked-place-template'>
+  <ul>
+    <% _.each(likedLocations, function(location) { %>
+      <li><%= location.name %></li>
+    <% }); %>
+  </ul>
+</script>
+
+<nav id='likedPlaces'>
+</nav>
