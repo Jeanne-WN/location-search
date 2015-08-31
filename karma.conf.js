@@ -10,7 +10,7 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine'],
+    frameworks: ['browserify', 'jasmine'],
 
 
     // list of files / patterns to load in the browser
@@ -21,7 +21,6 @@ module.exports = function(config) {
       'vendor/backbone/backbone.js',
       'vendor/jasmine-jquery/lib/jasmine-jquery.js',
       'vendor/jasmine-ajax/lib/mock-ajax.js',
-      'src/js/**/*.js',
       'spec/spec-helper.js',
       'spec/**/*-spec.js'
     ],
@@ -35,6 +34,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'spec/**/*-spec.js': ['browserify']
     },
 
 

@@ -1,4 +1,8 @@
-var SearchFormView = Backbone.View.extend({
+var Backbone = require('backbone');
+var $ = require('jquery');
+var _ = require('underscore');
+
+module.exports = Backbone.View.extend({
   el: '#searchForm',
 
   events: {

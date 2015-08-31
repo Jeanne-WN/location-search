@@ -5,13 +5,26 @@
   "license": "ISC",
   "devDependencies": {
     "bower": "^1.4.1",
+    "backbone": "^1.2.2",
+    "browserify": "^11.0.1",
     "gulp": "^3.9.0",
     "gulp-jshint": "^1.11.2",
+    "handlebars": "^3.0.3",
+    "hbsfy": "^2.2.1",
     "jasmine-core": "^2.3.4",
+    "jquery": "^2.1.4",
     "jshint-stylish": "^2.0.1",
     "karma": "^0.13.3",
+    "karma-browserify": "^4.3.0",
     "karma-chrome-launcher": "^0.2.0",
-    "karma-jasmine": "^0.3.6"
+    "karma-jasmine": "^0.3.6",
+    "underscore": "^1.8.3",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "browserify": {
+    "transform": [
+      "hbsfy"
+    ]
   },
   "dependencies": {},
   "scripts": {

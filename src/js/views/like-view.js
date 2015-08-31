@@ -1,4 +1,8 @@
-var LikeView = Backbone.View.extend({
+var Backbone = require('backbone');
+var $ = require('jquery');
+var _ = require('underscore');
+
+module.exports = Backbone.View.extend({
   el: '#likedPlaces',
 
   initialize: function(model){

@@ -1,3 +1,7 @@
+var Backbone = require('backbone');
+var $ = require('jquery');
+var LikeView = require('../src/js/views/like-view');
+
 describe('LikeView', function(){
   'use strict';
 
