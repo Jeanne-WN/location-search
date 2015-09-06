@@ -18,12 +18,14 @@
     "karma-browserify": "^4.3.0",
     "karma-chrome-launcher": "^0.2.0",
     "karma-jasmine": "^0.3.6",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1",
     "underscore": "^1.8.3",
     "vinyl-source-stream": "^1.1.0"
   },
   "browserify": {
     "transform": [
-      "hbsfy"
+      "reactify"
     ]
   },
   "dependencies": {},

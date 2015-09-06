@@ -19,8 +19,16 @@ gulp.task('js', function() {
 gulp.task('browserify', function() {
     return browserify('src/js/app.js')
         .bundle()
+        .on('error', function(err){
+          console.log(err.message);
+          this.emit('end');
+        })
         .pipe(source('bundle.js'))
         .pipe(gulp.dest('build/js'));
 });
 
 gulp.task('default', ['js', 'test']);
+
+gulp.task('watch', function() {
+  gulp.watch('src/js/**/*', ['browserify']);
+});
