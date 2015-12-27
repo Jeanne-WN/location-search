@@ -30,9 +30,18 @@ module.exports = Backbone.View.extend({
 
     var name = $('h5', e.currentTarget.parentElement).text();
 
-    var location = _.first(_.where(this.model.get('locations'), {name: name}));
-    location.liked = !location.liked;
+    var liked_location = _.first(_.where(this.model.get('locations'), {name: name}));
+    liked_location.liked = !liked_location.liked;
 
+    var liked = this.model.get('liked');
+    if(liked_location.liked) {
+      liked.push(liked_location);
+    }else{
+      liked = _.reject(liked, function(l){ return l.name == liked_location.name });
+    };
+
+    this.model.set('liked', liked);
     this.model.trigger('change:locations');
+    this.model.trigger('change:liked');
   }
 });

@@ -8,11 +8,11 @@ module.exports = Backbone.View.extend({
   initialize: function(model){
     this.model = model;
     this.template =  $('#liked-place-template').html();
-    this.model.on('change:locations', _.bind(this.render, this));
+    this.model.on('change:liked', _.bind(this.render, this));
   },
 
   render: function(){
-    var likedLocations = _.select(this.model.get('locations'), {'liked': true});
+    var likedLocations = _.select(this.model.get('liked'));
 
     var compiled = _.template(this.template);
     var html = compiled({likedLocations: likedLocations});

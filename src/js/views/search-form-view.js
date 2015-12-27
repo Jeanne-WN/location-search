@@ -31,8 +31,14 @@ module.exports = Backbone.View.extend({
     $.ajax({
       url: 'http://location-backend-service.herokuapp.com/locations?name=' + name,
       success: function(results){
-        self.model.set('locations', _.map(results, function(result){
+        var searched_locations = _.map(results, function(result){
           return _.extend(result, { liked: false });
+        })
+
+        var liked = self.model.get('liked');
+
+        self.model.set('locations', _.map(searched_locations, function(location){
+          return _.first(_.where(liked, {name: location.name})) || location;
         }));
       }
     });
