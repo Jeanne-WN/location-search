@@ -1,4 +1,4 @@
-Feature: Location Search
+Feature: Search Locations
 
 Scenario: search location with key word
   Given I am on location search page

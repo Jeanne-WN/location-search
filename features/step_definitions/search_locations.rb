@@ -1,7 +1,3 @@
-Given(/^I am on location search page$/) do
-  visit 'http://localhost:9999'
-end
-
 When(/^I search with '(.*)'$/) do |keyword|
   fill_in 'locationInput', :with => keyword
   click_button 'search'
