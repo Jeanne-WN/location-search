@@ -1,4 +1,7 @@
 Feature: Like Locations
+As consumer,
+I want to like a location
+so that I can remember which city I want to go
 
 Scenario: like 1 location
   Given I am on location search page
